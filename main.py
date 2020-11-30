@@ -13,7 +13,7 @@ logging.basicConfig(filename="rdf2vec.log", level = logging.INFO, format='%(asct
 # will be excluded from the graph
 logging.info("Read in knowledge graph.")
 label_predicates = []
-kg = KG(location="data/dbp_graph_sample.ttl", label_predicates=label_predicates)
+kg = KG(location="data/dbp_graph.ttl", label_predicates=label_predicates)
 
 logging.info("Create walkers and transformers.")
 walkers = [RandomWalker(4, 5, UniformSampler())]
